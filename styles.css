@@ -7,10 +7,6 @@
     font-family: BoosterNextFY-Bold;
     src: url(assets/fonts/BoosterNextFY-Bold.ttf);
 }
-@font-face {
-    font-family: BoosterNextFY-Light;
-    src: url(assets/fonts/BoosterNextFY-Regular.ttf);
-}
 
 .bg-services {
     background-color: #EBF4F6 !important;
@@ -18,30 +14,30 @@
 }
 p.bold {
     font-family: BoosterNextFY-Bold, sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.125rem; // 18px
     color: #6E6E70;
-    line-height: 1.75rem;
+    line-height: 1.75rem; // 28px
 }
 p.regular {
     font-family: BoosterNextFY-Regular, sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.125rem; // 18px
     color: #6E6E70;
-    line-height: 1.75rem;
+    line-height: 1.75rem; // 28px
 }
 
 h2 {
     font-family: BoosterNextFY-Bold, sans-serif;
-    font-size: 3.75rem;
+    font-size: 3.75rem; // 60px
     color: #6E6E70;
 }
 h4 {
     font-family: BoosterNextFY-Bold, sans-serif;
-    font-size: 1.875rem;
+    font-size: 1.875rem; // 30px
     color: #6E6E70;
 }
 p {
     font-family: BoosterNextFY-Regular, sans-serif;
-    font-size: 1.5625rem;
+    font-size: 1.5625rem; // 25px
     color: #6E6E70;
 }
 
@@ -51,18 +47,17 @@ p {
 .gradient-overlay::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(103deg, #99B56F 10%, #13B1E7 100%);
     mix-blend-mode: multiply;
-    border-radius: 10px;
+    border-radius: 20px;
     z-index: 1;
 }
 
+
 .hero-img {
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 100%;
 }
 .is-logo {
@@ -99,4 +94,37 @@ p {
     font-size: 20px;
 }
 
+ul li {
+    list-style: none;
+    position: relative;
+}
 
+ul li::before {
+    content: '●';
+    font-size: 2rem;
+    position: absolute;
+    left: -30px;
+    top: -10px;
+    background: linear-gradient(90deg, #99B56F 0%, #13B1E7 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.team-img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.banner {
+    background-color: #13B1E7;
+}
+
+.card {
+    background-color: #13B1E7;
+    border: none;
+}
+
+.testimonial {
+    background-color: #EBF4F6;
+    border-radius: 20px;
+}
