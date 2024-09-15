@@ -15,13 +15,11 @@
 p.bold {
     font-family: BoosterNextFY-Bold, sans-serif;
     font-size: 1.125rem; // 18px
-    color: #6E6E70;
     line-height: 1.75rem; // 28px
 }
 p.regular {
     font-family: BoosterNextFY-Regular, sans-serif;
     font-size: 1.125rem; // 18px
-    color: #6E6E70;
     line-height: 1.75rem; // 28px
 }
 
@@ -127,4 +125,45 @@ ul li::before {
 .testimonial {
     background-color: #EBF4F6;
     border-radius: 20px;
+}
+.arrow-left, .arrow-right {
+    cursor: pointer;
+}
+
+.arrow-left img, .arrow-right img {
+    width: 25px;
+}
+
+.d-flex.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.card-title {
+    color: #6E6E70;
+    font-size: 1.25rem;
+}
+
+.card-subtitle {
+    color: #6E6E70;
+    font-size: 1rem;
+}
+
+.card-text {
+    color: #6E6E70;
+    font-size: 0.875rem;
+}
+
+.contact-title {
+    color: #6E6E70;
+}
+
+.form-agreement {
+    color: #6E6E70;
+    font-size: 0.8125rem;
+}
+
+.contact-info {
+    color: #6E6E70;
+    font-size: 0.875rem;
 }
