@@ -167,3 +167,31 @@ ul li::before {
     color: #6E6E70;
     font-size: 0.875rem;
 }
+
+input.form-control,
+textarea.form-control {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    outline: none;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    box-shadow: none;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+}
+
+.whirl-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.container-fluid {
+    position: relative;
+}
