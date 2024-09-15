@@ -44,13 +44,14 @@
 <section id="services">
     <div class="container py-5 my-5">
         <h4 class="text-center mb-5">Mūsu pakalpojumi</h4>
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="bg-services text p-5 mb-3">
                     <div class="row align-items-center">
-                        <div class="col-3">
-                            <img src="assets/images/services/cybersecurity.svg" alt="cybersecurity">
-                            <p class="text-center">KIBERDROŠĪBA</p>
+                        <div class="col-3 text-center">
+                            <img src="assets/images/services/cybersecurity.svg" alt="cybersecurity" class="service-img">
+                            <p>KIBERDROŠĪBA</p>
                         </div>
                         <div class="col-9">
                             <p class="bold">Drošības un ielaušanās testi</p>
@@ -73,9 +74,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="bg-services text p-5 mb-3">
-                    <div class="row align-items-center text-center">
-                        <div class="col-3">
-                            <img src="assets/images/services/consultation.svg" alt="consultation">
+                    <div class="row align-items-center">
+                        <div class="col-3 text-center">
+                            <img src="assets/images/services/consultation.svg" alt="consultation" class="service-img">
                             <p>VADĪBAS KONSULTĀCIJAS IT JAUTĀJUMOS</p>
                         </div>
                         <div class="col-9">
@@ -97,9 +98,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="bg-services text p-5 mb-3">
-                    <div class="row align-items-center text-center">
-                        <div class="col-3">
-                            <img src="assets/images/services/management.svg" alt="management">
+                    <div class="row align-items-center">
+                        <div class="col-3 text-center">
+                            <img src="assets/images/services/management.svg" alt="management" class="service-img">
                             <p>IT PROJEKTU UZRAUDZĪBA UN VADĪBA</p>
                         </div>
                         <div class="col-9">
@@ -121,6 +122,7 @@
     </div>
 </section>
 
+
 <!-- about -->
 <section id="about">
     <div class="container-fluid mx-5">
@@ -137,7 +139,7 @@
                 </ul>
                 <button class="button mb-3" type="button">Sazināties</button>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6 d-none d-lg-block">
                 <div class="gradient-overlay team-img">
                     <img src="assets/images/about/team.png" alt="team" class="img-fluid">
                 </div>
@@ -184,7 +186,7 @@
                             <img src="/assets/images/testimonials/spirits.png" alt="spiritsandwinec" class="pb-3">
                             <h4 class="card-title">Mārtiņš Šulcs</h4>
                             <p class="lead card-subtitle">CEO Spirits & Wine</p>
-                            <p class="regular card-text mx-5 d-lg-block">Pateicoties sadarbībai ar IS Services, uzņēmumā
+                            <p class="card-text mx-5 d-lg-block"><br>Pateicoties sadarbībai ar IS Services, uzņēmumā
                                 Spirits & Wine esam sakārtojuši IT procesus un šobrīd darbi rit ātrāk un efektīvāk.
                                 Jānis ir
                                 komunikācijas tilts starp uzņēmuma vadību un IT nodaļu. Iesaistoties Jānim, uzlabojās
@@ -199,7 +201,7 @@
                             <img src="/assets/images/testimonials/valmiera.png" alt="valmiera" class="pb-3">
                             <h4 class="card-title">Atis Rudzītis</h4>
                             <p class="lead card-subtitle">Valmieras novada pašvaldības tīkla drošības pārvaldnieks</p>
-                            <p class="regular card-text mx-5 d-lg-block">2022. gadā sadarbībā ar IS Services veicām
+                            <p class="card-text mx-5 d-lg-block"><br>2022. gadā sadarbībā ar IS Services veicām
                                 kiberdrošības testu, izmantojot arī e-pastu pikšķerēšanas elementus, un pēc tam veicām
                                 kopīgas
                                 lietotāju apmācības, kurās analizējām lietotāju uzvedību un reakciju uz šīm viltus
@@ -217,7 +219,7 @@
                             <img src="/assets/images/testimonials/visendorff.png" alt="visendorff" class="pb-3">
                             <h4 class="card-title">Edmunds Visendorfs</h4>
                             <p class="card-subtitle">SIA "VISENDORFF" Valdes loceklis</p>
-                            <p class="regular card-text mx-5 d-lg-block">Sadarbojamies ar SIA "IS Services" kopš 2011.
+                            <p class=" card-text mx-5 d-lg-block"><br>Sadarbojamies ar SIA "IS Services" kopš 2011.
                                 gada.
                                 "IS Sevices" ir mūsu prioritārs sadarbības partneris un apakšuzņēmējs, nodrošinot plaša
                                 spektra
@@ -241,14 +243,60 @@
 <!-- contact -->
 <section>
     <div class="container-fluid">
-        <div class="row align-items-center">
+        <div class="row align-items-around">
             <div class="col-md-6">
                 <img src="assets/images/contact/manager.png" alt="manager" class="img-fluid">
             </div>
             <div class="col-md-6">
-                <h2>Priecāsimies ar Jums sazināties!</h2>
+                <h2 class="contact-title">Priecāsimies ar Jums sazināties!</h2>
                 <p>Lūdzu, aizpildiet pieteikuma formu vai rakstiet mums e-pastā, kā arī pieņemsim Jūsu telefona
                     zvanu.</p>
+                <div class="col-md-6 align-items-center justify-content-end d-flex">
+                    <img src="assets/images/contact/whirl.png" alt="whirl" class="img-fluid">
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Vārds*" aria-label="Vārds*">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Kontakttālrunis*"
+                               aria-label="Kontakttālrunis*">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="E-pasts*" aria-label="E-pasts*">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Uzņēmuma nosaukums*"
+                               aria-label="Uzņēmuma nosaukums*">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <textarea class="form-control" placeholder="Jūsu ziņojums*"
+                                  aria-label="Jūsu ziņojums*"></textarea>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Piekrītu saņemt e-pastā nozares jaunumus un aktualitātes
+                        </label>
+                        <p class="form-agreement">Nosūtot šo ziņojumu Jūs piekrītat IS Services privātuma politikai</p>
+                    </div>
+                    <div>
+                        <button class="button mb-3">Sūtīt</button>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-info">Tālr. LV: +371 29 233 533 <br>
+                            Tālr. EN un RU: +371 29 233 533, +351 964 712 686 <br>
+                            Tālr. PT: +351 964 712 686 <br>
+                            E-pasts: info@isservices.lv
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
