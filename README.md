@@ -15,6 +15,10 @@ Made as a technical task for ```Premium Solutions```
 
 ## Demo
 
+
+https://github.com/user-attachments/assets/1be7e10f-e76b-4275-a91c-8a3cc328dfc2
+
+
 ---
 
 ## Technologies Used
