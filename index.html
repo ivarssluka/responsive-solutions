@@ -9,7 +9,7 @@
     <title>IS Services</title>
 </head>
 <body>
-<!-- main -->
+<!-- Hero -->
 <div class="container-fluid p-0">
     <div class="row">
         <div class="col-md-6 d-none d-md-block">
@@ -27,10 +27,13 @@
             <div class="position-relative d-flex justify-content-end">
                 <div class="whirl-container position-relative d-flex justify-content-center">
                     <img src="assets/images/hero/whirl.png" alt="whirl" class="img-fluid">
-                    <img src="assets/images/hero/menu/open.svg" alt="burger" class="open-icon position-absolute">
+                </div>
+                <div>
+                    <img src="assets/images/hero/menu/open.svg" alt="burger" class="open-icon position-absolute"
+                         data-bs-toggle="modal" data-bs-target="#menuModal">
                 </div>
             </div>
-            <div class="py-1 text-center text-md-start">
+            <div class="title py-1 text-center text-md-start">
                 <h2>IS Services</h2>
                 <p>Tavs personīgais konsultants informācijas <br>
                     tehnoloģiju un kiberdrošības jautājumos.</p>
@@ -39,21 +42,39 @@
         </div>
     </div>
 </div>
-
-<!-- services -->
+<!-- Modal -->
+<div class="modal fade" id="menuModal" tabindex="1" aria-labelledby="menuModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-end">
+        <div class="modal-content">
+            <button type="button" class="btn-close d-flex" data-bs-dismiss="modal" aria-label="Close">
+                <img src="assets/images/hero/menu/close.svg" alt="close">
+            </button>
+            <div class="modal-body">
+                <ul class="menu-list">
+                    <li><a href="#">IS Services</a></li>
+                    <li><a href="#">Pakalpojumi</a></li>
+                    <li><a href="#">Par mums</a></li>
+                    <li><a href="#">Atsauksmes</a></li>
+                    <li><a href="#">Kontakti</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services -->
 <section id="services">
-    <div class="container py-5 my-5">
+    <div class=" services container py-5 my-5">
         <h4 class="text-center mb-5">Mūsu pakalpojumi</h4>
 
         <div class="row">
             <div class="col-lg-12">
                 <div class="bg-services text p-5 mb-3">
                     <div class="row align-items-center">
-                        <div class="col-3 text-center">
+                        <div class="col-12 col-md-4 text-center">
                             <img src="assets/images/services/cybersecurity.svg" alt="cybersecurity" class="service-img">
                             <p>KIBERDROŠĪBA</p>
                         </div>
-                        <div class="col-9">
+                        <div class="col-12 col-md-8">
                             <p class="bold">Drošības un ielaušanās testi</p>
                             <p class="regular">Drošības un ielaušanās testi publiskām un iekšējām IT/OT/IoT sistēmām;
                                 sociālās inženierijas kampaņas; Open Source Intelligence (OSINT) datu vākšana un
@@ -74,11 +95,11 @@
             <div class="col-lg-12">
                 <div class="bg-services text p-5 mb-3">
                     <div class="row align-items-center">
-                        <div class="col-3 text-center">
+                        <div class="col-12 col-md-4 text-center">
                             <img src="assets/images/services/consultation.svg" alt="consultation" class="service-img">
                             <p>VADĪBAS KONSULTĀCIJAS IT JAUTĀJUMOS</p>
                         </div>
-                        <div class="col-9">
+                        <div class="col-12 col-md-8">
                             <p class="bold">Uzņēmuma/iestādes IT pārvaldības procesu uzlabošana</p>
                             <p class="regular">Ciešā sadarbībā ar Jūsu IT komandu palīdzēsim sakārtot/uuzlabot IT
                                 pārvaldības procesus</p>
@@ -97,11 +118,11 @@
             <div class="col-lg-12">
                 <div class="bg-services text p-5 mb-3">
                     <div class="row align-items-center">
-                        <div class="col-3 text-center">
+                        <div class="col-12 col-md-4 text-center">
                             <img src="assets/images/services/management.svg" alt="management" class="service-img">
                             <p>IT PROJEKTU UZRAUDZĪBA UN VADĪBA</p>
                         </div>
-                        <div class="col-9">
+                        <div class="col-12 col-md-8">
                             <p class="bold">Informācijas tehnoloģiju projektu uzraudzība</p>
                             <p class="regular">Nodrošināsim pasūtītāja pārstāvja lomu Jūsu IT projektā</p>
                             <p class="bold">Informācijas tehnoloģiju projektu vadība</p>
@@ -119,9 +140,9 @@
     </div>
 </section>
 
-<!-- about -->
+<!-- About -->
 <section id="about">
-    <div class="container-fluid mx-5">
+    <div class="about container-fluid mx-5">
         <div class="row align-items-around">
             <div class="col-lg-6">
                 <h2 class="text-start">Par mums</h2>
@@ -129,9 +150,9 @@
                     pakalpojumu, kā arī IT projektu vadības un uzraudzības jautājumos. Mūsu komandā ir eksperti ar
                     ilggadīgu pieredzi nozarē un CGEIT, ITIL, CEH, CISSP UN CISM sertifikātiem.</p>
                 <ul><h4>Mūsu pamatvērtības</h4>
-                    <li>Uzticamība</li>
-                    <li>Skaidrība</li>
-                    <li>Stabilitāte</li>
+                    <li class="value">Uzticamība</li>
+                    <li class="value">Skaidrība</li>
+                    <li class="value">Stabilitāte</li>
                 </ul>
                 <button class="button mb-3" type="button">Sazināties</button>
             </div>
@@ -143,8 +164,7 @@
         </div>
     </div>
 </section>
-
-<!-- banner -->
+<!-- Banner -->
 <section class="container-fluid banner mt-5">
     <div class="row justify-content-center align-items-center text-center">
         <div class="col-lg-3 col-md-6 py-3">
@@ -165,8 +185,7 @@
         </div>
     </div>
 </section>
-
-<!-- testimonials -->
+<!-- Testimonials -->
 <section class="mt-5">
     <div class="container-lg">
         <div class="text-center">
@@ -177,7 +196,7 @@
                 <img src="assets/images/testimonials/arrow-left.svg" alt="arrow-left">
             </div>
             <div class="row py-3 justify-content-around g-5">
-                <div class="col-8 col-lg-4 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <div class="testimonial border-0">
                         <div class="card-body text-center py-4">
                             <img src="/assets/images/testimonials/spirits.png" alt="spiritsandwinec" class="pb-3">
@@ -192,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <div class="testimonial border-0">
                         <div class="card-body text-center py-4">
                             <img src="/assets/images/testimonials/valmiera.png" alt="valmiera" class="pb-3">
@@ -210,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <div class="testimonial border-0">
                         <div class="card-body text-center py-4">
                             <img src="/assets/images/testimonials/visendorff.png" alt="visendorff" class="pb-3">
@@ -235,13 +254,12 @@
         </div>
     </div>
 </section>
-
-<!-- contact -->
+<!-- Contact -->
 <section>
     <div class="container-fluid">
         <div class="row align-items-around">
             <div class="col-md-6">
-                <img src="assets/images/contact/manager.png" alt="manager" class="img-fluid">
+                <img src="assets/images/contact/manager.png" alt="manager" class="img-fluid d-none d-md-block">
             </div>
             <div class="col-md-6">
                 <h2 class="contact-title">Priecāsimies ar Jums sazināties!</h2>
@@ -275,21 +293,23 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="form-check">
+                    <div class="form-check ms-3">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label ms-2" for="flexCheckDefault">
                             Piekrītu saņemt e-pastā nozares jaunumus un aktualitātes
                         </label>
-                        <p class="form-agreement ms-2">Nosūtot šo ziņojumu Jūs piekrītat IS Services privātuma politikai</p>
+                        <p class="form-agreement ms-2">Nosūtot šo ziņojumu Jūs piekrītat IS Services privātuma
+                            politikai</p>
                     </div>
                     <div>
                         <button class="button mb-3">Sūtīt</button>
                     </div>
                     <div class="contact-info">
-                        <p class="contact-info">Tālr. LV: +371 29 233 533 <br>
-                            Tālr. EN un RU: +371 29 233 533, +351 964 712 686 <br>
-                            Tālr. PT: +351 964 712 686 <br>
-                            E-pasts: info@isservices.lv
+                        <p class="d-flex flex-column gap-1">
+                            <span>Tālr. LV:  +371 29 233 533</span>
+                            <span>Tālr. EN un RU: +371 29 233 533, +351 964 712 686</span>
+                            <span>Tālr. PT: +351 964 712 686</span>
+                            <span>E-pasts: <span class="email">info@isservices.lv</span></span>
                         </p>
                     </div>
                 </div>
