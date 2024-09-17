@@ -14,13 +14,13 @@
     <div class="row">
         <div class="col-md-6 d-none d-md-block">
             <div class="gradient-overlay position-relative">
-                <img src="assets/images/hero/is-logo.png" alt="logo" class="is-logo position-absolute">
+                <img src="assets/images/hero/is-logo.svg" alt="logo" class="is-logo position-absolute">
                 <img src="assets/images/hero/hero-human.png" alt="human" class="hero-img img-fluid">
             </div>
         </div>
         <div class="col-md-1 d-none d-md-block">
             <div class="py-3 px-3">
-                <img src="assets/images/hero/flag-lv.png" alt="flag">
+                <img src="assets/images/hero/flag-lv.svg" alt="flag">
             </div>
         </div>
         <div class="col-12 col-md-5">
@@ -65,14 +65,13 @@
 <section id="services">
     <div class=" services container py-5 my-5">
         <h4 class="text-center mb-5">Mūsu pakalpojumi</h4>
-
         <div class="row">
             <div class="col-lg-12">
                 <div class="bg-services text p-5 mb-3">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-4 text-center">
                             <img src="assets/images/services/cybersecurity.svg" alt="cybersecurity" class="service-img">
-                            <p>KIBERDROŠĪBA</p>
+                            <p><br>KIBERDROŠĪBA</p>
                         </div>
                         <div class="col-12 col-md-8">
                             <p class="bold">Drošības un ielaušanās testi</p>
@@ -97,7 +96,7 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-4 text-center">
                             <img src="assets/images/services/consultation.svg" alt="consultation" class="service-img">
-                            <p>VADĪBAS KONSULTĀCIJAS IT JAUTĀJUMOS</p>
+                            <p><br>VADĪBAS KONSULTĀCIJAS IT JAUTĀJUMOS</p>
                         </div>
                         <div class="col-12 col-md-8">
                             <p class="bold">Uzņēmuma/iestādes IT pārvaldības procesu uzlabošana</p>
@@ -120,13 +119,17 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-4 text-center">
                             <img src="assets/images/services/management.svg" alt="management" class="service-img">
-                            <p>IT PROJEKTU UZRAUDZĪBA UN VADĪBA</p>
+                            <p><br>IT PROJEKTU UZRAUDZĪBA UN VADĪBA</p>
                         </div>
                         <div class="col-12 col-md-8">
                             <p class="bold">Informācijas tehnoloģiju projektu uzraudzība</p>
-                            <p class="regular">Nodrošināsim pasūtītāja pārstāvja lomu Jūsu IT projektā</p>
+                            <p class="regular">Nodrošināsim pasūtītāja pārstāvja lomu Jūsu IT projektā un Jūsu
+                                piegādātāju uzraudzību tajā</p>
                             <p class="bold">Informācijas tehnoloģiju projektu vadība</p>
                             <p class="regular">IT projektu vadītāja ārpakalpojums</p>
+                            <p class="bold">IT projektu ārpakalpojums</p>
+                            <p class="regular">Nodrošināsim projekta mērķu sasniegšanu un uzdevumu izpildi paredzētajā
+                                termiņā un plānotajā budžetā</p>
                         </div>
                     </div>
                 </div>
@@ -139,10 +142,9 @@
         </div>
     </div>
 </section>
-
 <!-- About -->
 <section id="about">
-    <div class="about container-fluid mx-5">
+    <div class="about container-fluid">
         <div class="row align-items-around">
             <div class="col-lg-6">
                 <h2 class="text-start">Par mums</h2>
@@ -156,7 +158,7 @@
                 </ul>
                 <button class="button mb-3" type="button">Sazināties</button>
             </div>
-            <div class="col-md-6 d-none d-lg-block">
+            <div class="col-md-6 d-none d-lg-block m-0">
                 <div class="gradient-overlay team-img">
                     <img src="assets/images/about/team.png" alt="team" class="img-fluid">
                 </div>
@@ -165,22 +167,22 @@
     </div>
 </section>
 <!-- Banner -->
-<section class="container-fluid banner mt-5">
+<section class="container-fluid banner mt-5 display-flex">
     <div class="row justify-content-center align-items-center text-center">
         <div class="col-lg-3 col-md-6 py-3">
-            <img src="/assets/images/banner/experience.png" alt="experience" class="img-fluid">
+            <img src="assets/images/banner/experience.svg" alt="experience" class="img-fluid">
             <p class="text-white">15+ gadu pieredze nozarē</p>
         </div>
         <div class="col-lg-3 col-md-6 py-3">
-            <img src="/assets/images/banner/relationship.png" alt="relationships" class="img-fluid">
+            <img src="assets/images/banner/relationship.svg" alt="relationships" class="img-fluid">
             <p class="text-white">Ilgtermiņa attiecības ar klientiem</p>
         </div>
         <div class="col-lg-3 col-md-6 py-3">
-            <img src="/assets/images/banner/success.png" alt="success" class="img-fluid">
+            <img src="assets/images/banner/success.svg" alt="success" class="img-fluid">
             <p class="text-white">Daudzu veiksmīgu projektu realizācija</p>
         </div>
         <div class="col-lg-3 col-md-6 py-3">
-            <img src="/assets/images/banner/vision.png" alt="vision" class="img-fluid">
+            <img src="assets/images/banner/vision.svg" alt="vision" class="img-fluid">
             <p class="text-white">Stratēģisks un tālredzīgs redzējums</p>
         </div>
     </div>
@@ -192,63 +194,82 @@
             <h4>Mums uzticas</h4>
         </div>
         <div class="d-flex align-items-center justify-content-between py-3">
-            <div class="arrow-left mx-3">
+            <div class="arrow-left mx-3" role="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
                 <img src="assets/images/testimonials/arrow-left.svg" alt="arrow-left">
             </div>
-            <div class="row py-3 justify-content-around g-5">
-                <div class="col-12 col-lg-4">
-                    <div class="testimonial border-0">
-                        <div class="card-body text-center py-4">
-                            <img src="/assets/images/testimonials/spirits.png" alt="spiritsandwinec" class="pb-3">
-                            <h4 class="card-title">Mārtiņš Šulcs</h4>
-                            <p class="lead card-subtitle">CEO Spirits & Wine</p>
-                            <p class="card-text mx-5 d-lg-block"><br>Pateicoties sadarbībai ar IS Services, uzņēmumā
-                                Spirits & Wine esam sakārtojuši IT procesus un šobrīd darbi rit ātrāk un efektīvāk.
-                                Jānis ir
-                                komunikācijas tilts starp uzņēmuma vadību un IT nodaļu. Iesaistoties Jānim, uzlabojās
-                                savstarpējā komunikācija starp nodaļām un ilgstoši iestrēgušie projekti tika
-                                atrisināti.</p>
+            <div id="testimonialsCarousel" class="carousel slide col-lg-10" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row py-3 justify-content-around">
+                            <div class="col-lg-4">
+                                <div class="testimonial border-0">
+                                    <div class="card-body text-center py-4">
+                                        <img src="assets/images/testimonials/spirits.png" alt="spiritsandwine"
+                                             class="pb-3">
+                                        <h4 class="card-title">Mārtiņš Šulcs</h4>
+                                        <p class="lead card-subtitle">CEO Spirits & Wine</p>
+                                        <p class="card-text mx-1">Pateicoties sadarbībai ar IS Services, uzņēmumā
+                                            Spirits & Wine esam sakārtojuši IT procesus un šobrīd darbi rit ātrāk un
+                                            efektīvāk.
+                                            Jānis ir
+                                            komunikācijas tilts starp uzņēmuma vadību un IT nodaļu. Iesaistoties Jānim,
+                                            uzlabojās
+                                            savstarpējā komunikācija starp nodaļām un ilgstoši iestrēgušie projekti tika
+                                            atrisināti.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="testimonial border-0">
-                        <div class="card-body text-center py-4">
-                            <img src="/assets/images/testimonials/valmiera.png" alt="valmiera" class="pb-3">
-                            <h4 class="card-title">Atis Rudzītis</h4>
-                            <p class="lead card-subtitle">Valmieras novada pašvaldības tīkla drošības pārvaldnieks</p>
-                            <p class="card-text mx-5 d-lg-block"><br>2022. gadā sadarbībā ar IS Services veicām
-                                kiberdrošības testu, izmantojot arī e-pastu pikšķerēšanas elementus, un pēc tam veicām
-                                kopīgas
-                                lietotāju apmācības, kurās analizējām lietotāju uzvedību un reakciju uz šīm viltus
-                                vēstulēm.
-                                Kopumā tieši šis reālais pikšķerēšanas tests deva vislielāko sapratni par reāliem
-                                draudiem
-                                lietotājiem. Lietotāji iemācījās labāk atpazīt maskētus e-pastu sūtītājus un
-                                pielikumus.</p>
+                    <div class="carousel-item">
+                        <div class="row py-3 justify-content-around">
+                            <div class="col-lg-4">
+                                <div class="testimonial border-0">
+                                    <div class="card-body text-center py-4">
+                                        <img src="assets/images/testimonials/valmiera.png" alt="valmiera" class="pb-3">
+                                        <h4 class="card-title">Atis Rudzītis</h4>
+                                        <p class="lead card-subtitle">Valmieras novada pašvaldības tīkla drošības
+                                            pārvaldnieks</p>
+                                        <p class="card-text mx-5">2022. gadā sadarbībā ar IS Services veicām
+                                            kiberdrošības testu, izmantojot arī e-pastu pikšķerēšanas elementus, un pēc
+                                            tam veicām kopīgas lietotāju apmācības, kurās analizējām lietotāju uzvedību
+                                            un reakciju uz šīm
+                                            viltus vēstulēm. Kopumā tieši šis reālais pikšķerēšanas tests deva
+                                            vislielāko sapratni par
+                                            reāliem draudiem lietotājiem. Lietotāji iemācījās labāk atpazīt maskētus
+                                            e-pastu sūtītājus un
+                                            pielikumus.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="testimonial border-0">
-                        <div class="card-body text-center py-4">
-                            <img src="/assets/images/testimonials/visendorff.png" alt="visendorff" class="pb-3">
-                            <h4 class="card-title">Edmunds Visendorfs</h4>
-                            <p class="card-subtitle">SIA "VISENDORFF" Valdes loceklis</p>
-                            <p class=" card-text mx-5 d-lg-block"><br>Sadarbojamies ar SIA "IS Services" kopš 2011.
-                                gada.
-                                "IS Sevices" ir mūsu prioritārs sadarbības partneris un apakšuzņēmējs, nodrošinot plaša
-                                spektra
-                                IT pakalpojumus - ar IS drošību saistītas iekšējās izmeklēšanas, IT auditus, pakalpojumu
-                                vadību,
-                                un kontroli. IS Services sniedz profesionālus un pamatotus ziņojumus un konsultācijas.
-                                Gan mēs,
-                                gan mūsu klienti augstu vērtējam "IS Services" zināšanas un attieksmi.</p>
+                    <div class="carousel-item">
+                        <div class="row py-3 justify-content-around">
+                            <div class="col-lg-4">
+                                <div class="testimonial border-0">
+                                    <div class="card-body text-center py-4">
+                                        <img src="assets/images/testimonials/visendorff.png" alt="visendorff"
+                                             class="pb-3">
+                                        <h4 class="card-title">Edmunds Visendorfs</h4>
+                                        <p class="card-subtitle">SIA "VISENDORFF" Valdes loceklis</p>
+                                        <p class="card-text mx-5">Sadarbojamies ar SIA "IS Services" kopš 2011.
+                                            gada.
+                                            "IS Sevices" ir mūsu prioritārs sadarbības partneris un apakšuzņēmējs,
+                                            nodrošinot plaša spektra IT pakalpojumus - ar IS drošību saistītas iekšējās
+                                            izmeklēšanas, IT auditus, pakalpojumu vadību, un kontroli. IS Services
+                                            sniedz profesionālus un
+                                            pamatotus ziņojumus un konsultācijas. Gan mēs, gan mūsu klienti augstu
+                                            vērtējam "IS Services"
+                                            zināšanas un attieksmi.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="arrow-right mx-3">
+            <div class="arrow-right mx-3" role="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
                 <img src="assets/images/testimonials/arrow-right.svg" alt="arrow-right">
             </div>
         </div>
