@@ -22,11 +22,20 @@ h3 {
     font-size: 1.875rem;
 }
 
+h4 {
+    font-family: BoosterNextFY-Bold, sans-serif;
+    font-size: 1.5625rem;
+}
+
 p {
     font-family: BoosterNextFY-Regular, sans-serif;
     font-size: 1.5625rem;
 }
 
+p.testimonial {
+    font-family: BoosterNextFY-Regular,sans-serif;
+    font-size: 1.125rem;
+}
 li {
     font-family: BoosterNextFY-Regular, sans-serif;
     font-size: 1.5625rem;
@@ -216,8 +225,30 @@ ul li.value::before {
 .banner {
     background-color: #13B1E7;
     position: relative;
-    top: -5rem;
 }
+
+.arrow {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    top: -8rem;
+}
+
+.testimonial-card {
+    background: #EBF4F6;
+    border-radius: 2rem;
+    height: fit-content;
+}
+
+@media (max-width: 992px) {
+    .arrow {
+        display: none;
+    }
+    .testimonial-card {
+        margin-bottom: 2rem;
+    }
+}
+
 
 @media (min-width: 992px) {
     .services {
