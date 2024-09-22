@@ -225,7 +225,7 @@ ul li.value::before {
 .arrow {
     position: relative;
     cursor: pointer;
-    display: flex;
+    max-width: 3.5rem;
 }
 
 .testimonial-card {
