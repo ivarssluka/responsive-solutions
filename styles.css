@@ -22,6 +22,10 @@ h3 {
     font-size: 1.875rem;
 }
 
+h3.contact .first-word {
+    color: #13B1E7;
+}
+
 h4 {
     font-family: BoosterNextFY-Bold, sans-serif;
     font-size: 1.5625rem;
@@ -33,9 +37,14 @@ p {
 }
 
 p.testimonial {
-    font-family: BoosterNextFY-Regular,sans-serif;
+    font-family: BoosterNextFY-Regular, sans-serif;
     font-size: 1.125rem;
 }
+
+p.contact {
+    font-size: 0.8125rem;
+}
+
 li {
     font-family: BoosterNextFY-Regular, sans-serif;
     font-size: 1.5625rem;
@@ -76,6 +85,12 @@ li {
     z-index: -1;
 }
 
+.whirl-bottom {
+    bottom: 0;
+    z-index: -1;
+    max-width: 50vw;
+}
+
 .btn-open {
     position: absolute;
     top: 4%;
@@ -112,27 +127,6 @@ li {
 
 body {
     overflow-x: hidden;
-}
-
-@media (min-width: 768px) {
-    .services {
-        margin-top: 6rem;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        text-align: center;
-        top: 45%;
-    }
-
-    .button {
-        font-family: 'BoosterNextFY-Bold', sans-serif;
-        background: linear-gradient(90deg, #99B56F 0%, #13B1E7 100%);
-        color: #ffffff;
-        text-align: center;
-        width: auto;
-        border: none;
-        font-size: 1.25rem;
-    }
 }
 
 ul li {
@@ -225,13 +219,13 @@ ul li.value::before {
 .banner {
     background-color: #13B1E7;
     position: relative;
+    padding: 2rem 7rem 2rem 7rem;
 }
 
 .arrow {
     position: relative;
     cursor: pointer;
     display: flex;
-    top: -8rem;
 }
 
 .testimonial-card {
@@ -240,15 +234,70 @@ ul li.value::before {
     height: fit-content;
 }
 
-@media (max-width: 992px) {
-    .arrow {
-        display: none;
-    }
-    .testimonial-card {
-        margin-bottom: 2rem;
+.manager {
+    position: relative;
+    left: -15rem;
+}
+
+.contact-section {
+    margin-top: 5rem;
+}
+
+
+input.form-control {
+    border: none;
+    border-bottom: 2px solid #6E6E70;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+input.form-control:focus {
+    border-bottom-color: #13B1E7;
+    outline: none;
+    box-shadow: none;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+label.contact {
+    font-family: BoosterNextFY-Regular, sans-serif;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.email {
+    color: #99B56F;
+}
+
+@media (max-width: 480px) {
+    label.contact {
+        font-size: 0.8rem;
     }
 }
 
+@media (min-width: 768px) {
+    .services {
+        margin-top: 6rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        top: 45%;
+    }
+
+    .button {
+        font-family: 'BoosterNextFY-Bold', sans-serif;
+        background: linear-gradient(90deg, #99B56F 0%, #13B1E7 100%);
+        color: #ffffff;
+        text-align: center;
+        width: auto;
+        border: none;
+        font-size: 1.25rem;
+    }
+}
 
 @media (min-width: 992px) {
     .services {
@@ -267,9 +316,23 @@ ul li.value::before {
         border: none;
         font-size: 1.25rem;
     }
+
     .services-container {
         position: relative;
         margin-top: 15rem;
+    }
+    .arrow {
+        top: -8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    input[type="checkbox"] {
+        width: 2rem;
+        height: 2rem;
+    }
+    label.contact {
+        vertical-align: middle;
     }
 }
 
@@ -279,6 +342,7 @@ ul li.value::before {
         margin-top: 18rem;
     }
 }
+
 @media (min-width: 1400px) {
     .services-container {
         position: relative;
