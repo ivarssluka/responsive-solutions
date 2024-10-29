@@ -1,7 +1,6 @@
 # Responsive Single Page Website
 
 This is a **responsive single-page website** created using **HTML** and **Bootstrap** classes.
-Made as a technical task for ```Premium Solutions```
 
 ---
 
